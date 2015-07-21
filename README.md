@@ -1,40 +1,31 @@
 Hadoop PCAP library
 ===================
 
-License
+라이센스
 -------
-This library is distributed under the LGPL.  
-See: https://raw.github.com/RIPE-NCC/hadoop-pcap/master/LICENSE
 
-Repository
+Hadoop PCAP 라이브러리는 GPL 라이센스를 따릅니다.
+
+샘플 파일
 ----------
 
-	<repositories>
-	  <repository>
-	    <id>hadoop-pcap</id>
-	    <url>http://dl.bintray.com/hadoop-pcap/hadoop-pcap</url>
-	  </repository>
-	</repositories>
+http://www.netresec.com/?page=PcapFiles
 
-
-Screencast
+동영상
 ----------
 
-We have created a screencast showing the use of the Hadoop PCAP SerDe in Hive using [Amazon Elastic MapReduce](http://aws.amazon.com/elasticmapreduce/).  
-You can find the video on YouTube: http://www.youtube.com/watch?v=FLxeQciax-Q
+YouTube를 통해 http://www.youtube.com/watch?v=FLxeQciax-Q 동영상을 확인할 수 있습니다.
 
 
-Components
+컴포넌트
 ----------
 
-This project consists of two components:
+이 프로젝트는 두 개의 컴포넌트로 구성되어 있습니다:
 
-### Library
+### 라이브러리
 
-Bundles the code used to read PCAPs. Can be used within MapReduce jobs to natively read PCAP files.  
-See: https://github.com/RIPE-NCC/hadoop-pcap/tree/master/hadoop-pcap-lib
+PCAP 파일을 읽는 MapReduce Job용 프로젝트입니다.
 
-### SerDe
+### Hive SerDe
 
-Implements a Hive Serializer/Deserializer (SerDe) to query PCAPs using SQL like commands.  
-See: https://github.com/RIPE-NCC/hadoop-pcap/tree/master/hadoop-pcap-serde
+Hive에서 PCAP 파일을 읽기 위한 Hive Serializer/Deserializer (SerDe) 프로젝트입니다.
